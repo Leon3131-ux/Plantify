@@ -2,22 +2,31 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './component/login/login.component';
-import { AppRoutingModule } from './app-routing.module';
-import { RegisterComponent } from './component/register/register.component';
-import { ProfileComponent } from './component/profile/profile.component';
+import {LoginModule} from "./component/login/login.module";
+import {RegisterModule} from "./component/register/register.module";
+import {ProfileModule} from "./component/profile/profile.module";
+import {RouterModule, Routes} from "@angular/router";
+import {LoginComponent} from "./component/login/login.component";
+import {RegisterComponent} from "./component/register/register.component";
+import {ProfileComponent} from "./component/profile/profile.component";
 
+const routes: Routes = [
+  {path: "**", component: LoginComponent},
+  {path: "login", component: LoginComponent},
+  {path: "register", component: RegisterComponent},
+  {path: "profile", component: ProfileComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent,
-    ProfileComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(routes),
+    LoginModule,
+    RegisterModule,
+    ProfileModule
   ],
   providers: [],
   bootstrap: [AppComponent]
