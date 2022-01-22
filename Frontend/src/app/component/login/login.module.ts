@@ -4,6 +4,7 @@ import {LoginComponent} from "./login.component";
 import {ButtonModule} from "primeng/button";
 import {PasswordModule} from "primeng/password";
 import {InputTextModule} from "primeng/inputtext";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -15,7 +16,8 @@ import {InputTextModule} from "primeng/inputtext";
     CommonModule,
     ButtonModule,
     PasswordModule,
-    InputTextModule
+    InputTextModule,
+    RouterModule
   ]
 })
 export class LoginModule { }
