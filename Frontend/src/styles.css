@@ -2,4 +2,29 @@
 @import '../node_modules/primeng/resources/themes/lara-light-indigo/theme.css';
 html, body{
   margin: 0;
+  background-color: #a6f1a6;
+}
+
+.page-header-title{
+  font-size: xxx-large;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  text-align: center;
+}
+
+.form-border{
+  border-width: 3px;
+  background-color: white;
+}
+
+.logo_sample{
+  width: 161px;
+  height: 245px;
+  margin: 0% 41% 0% 43%;
+}
+
+.login-register-input-field{
+  width: 76%;
+
 }

@@ -1,21 +1,35 @@
 
-<div class="container">
-  <div class="flex-column">
-    <div class="p-col-2" style="background-color: red"></div>
-    <div class="p-col-8 border-1 align-content-center justify-content-center">
-      <span class="p-float-label">
-        <input type="text" pInputText>
-        <label>Username</label>
-      </span>
-      <div class="col-2" style="background-color: aquamarine"></div>
-      <div class="">
-        <span class="p-float-label">
-          <p-password></p-password>
-          <label>Password</label>
-        </span>
+<div class="container" >
+  <div class="grid mt-4">
+    <div class="col-2"></div>
+    <div class="col-8 border-1 mt-5 form-border">
+      <h1 class="page-header-title">Plantify Register</h1>
+      <img src="assets/images/logo_sample.jpg" alt="Plant Logo" class="logo_sample">
+      <div class="grid">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="grid">
+            <div class="col-1"></div>
+            <div class=" mt-4 col-10 grid">
+              <label class="col-2 ml-6">Username:</label>
+              <input type="text" pInputText class="login-register-input-field">
+            </div>
+          </div>
+          <div class="grid">
+            <div class="col-1"></div>
+            <div class="mt-4 col-10 grid">
+              <label class="col-2 ml-6">Password:</label>
+              <input type="password" pInputText class="login-register-input-field">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text-center">
-        <p-button label="Register"></p-button>
+        <div class="grid mt-4 mb-8">
+          <div class="col-9"></div>
+          <div class="text-center">
+            <p-button label="Register"></p-button>
+          </div>
+        </div>
       </div>
   </div>
 </div>
