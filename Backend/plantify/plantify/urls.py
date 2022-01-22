@@ -22,13 +22,11 @@ from finder import views as finder_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-<<<<<<< HEAD
     path('api/', include('api.urls')),
-=======
+    path('api-auth/', include('rest_framework.urls')),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
->>>>>>> master
     path('', include('finder.urls')),
 ]
