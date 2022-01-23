@@ -5,6 +5,8 @@ import {PasswordModule} from "primeng/password";
 import {ButtonModule} from "primeng/button";
 import {InputTextModule} from "primeng/inputtext";
 import {RouterModule} from "@angular/router";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -16,7 +18,10 @@ import {RouterModule} from "@angular/router";
     PasswordModule,
     ButtonModule,
     InputTextModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ]
 })
 export class RegisterModule { }

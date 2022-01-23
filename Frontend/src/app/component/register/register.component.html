@@ -1,6 +1,7 @@
 
 <div class="container" >
   <div class="grid mt-4">
+    <Form [formGroup]="register">
     <div class="col-2"></div>
     <div class="col-8 border-1 mt-5 form-border">
       <h1 class="page-header-title">Plantify Register</h1>
@@ -12,21 +13,23 @@
             <div class="col-1"></div>
             <div class=" mt-4 col-10 grid">
               <label class="col-2 ml-6">Email:</label>
-              <input type="text" pInputText class="login-register-input-field">
+              <input formControlName="email" type="text" pInputText class="login-register-input-field">
+            </div>
+            <div>
             </div>
           </div>
           <div class="grid">
             <div class="col-1"></div>
             <div class=" mt-4 col-10 grid">
               <label class="col-2 ml-6">Username:</label>
-              <input type="text" pInputText class="login-register-input-field">
+              <input  formControlName="username" type="text" pInputText class="login-register-input-field">
             </div>
           </div>
           <div class="grid">
             <div class="col-1"></div>
             <div class="mt-4 col-10 grid">
               <label class="col-2 ml-6">Password:</label>
-              <input type="password" pInputText class="login-register-input-field">
+              <p-password formControlName="password" class="login-register-input-field"></p-password>
             </div>
           </div>
         </div>
@@ -35,6 +38,7 @@
           <div class="col-9"></div>
           <div class="text-center">
             <p-button label="Register"></p-button>
+            <form [formGroup]="register" (ngSubmit)="onSubmit()"></form>
           </div>
         </div>
         <div class="grid mb-5">
@@ -42,6 +46,7 @@
           <div class="col">Already Have An Account?<a routerLink="/login"  class="mb-1 ml-1">Sign In</a></div>
         </div>
       </div>
+    </Form>
   </div>
 </div>
 
