@@ -18,9 +18,9 @@ export class RegisterComponent implements OnInit {
   ngOnInit(){
     };
 
-  onSubmit() {
+  submit() {
     // TODO: Use EventEmitter with form value
-    console.warn(this.register.value);
+    console.warn(this.register.getRawValue());
   }
 
 }
