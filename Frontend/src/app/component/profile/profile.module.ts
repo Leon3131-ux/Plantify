@@ -4,6 +4,7 @@ import {ProfileComponent} from "./profile.component";
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
 import {NavigationbarComponent} from "../navigationbar/navigationbar.component";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -11,11 +12,13 @@ import {NavigationbarComponent} from "../navigationbar/navigationbar.component";
     declarations: [
         ProfileComponent,
         NavigationbarComponent
+
     ],
     imports: [
         CommonModule,
         InputTextModule,
-        ButtonModule
+        ButtonModule,
+        RouterModule
     ]
 })
 export class ProfileModule { }

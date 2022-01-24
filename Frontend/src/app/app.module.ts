@@ -9,7 +9,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {LoginComponent} from "./component/login/login.component";
 import {RegisterComponent} from "./component/register/register.component";
 import {ProfileComponent} from "./component/profile/profile.component";
-import { NavigationbarComponent } from './navigationbar/navigationbar.component';
+
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
@@ -20,8 +20,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavigationbarComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
