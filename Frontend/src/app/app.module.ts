@@ -9,25 +9,30 @@ import {RouterModule, Routes} from "@angular/router";
 import {LoginComponent} from "./component/login/login.component";
 import {RegisterComponent} from "./component/register/register.component";
 import {ProfileComponent} from "./component/profile/profile.component";
+import { HomeComponent } from './component/home/home.component';
+import {HomeModule} from "./component/home/home.module";
 
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
   {path: "register", component: RegisterComponent},
   {path: "profile", component: ProfileComponent},
+  {path: "home", component: HomeComponent},
   {path: "**", component: LoginComponent},
 ]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
     LoginModule,
     RegisterModule,
-    ProfileModule
+    ProfileModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
