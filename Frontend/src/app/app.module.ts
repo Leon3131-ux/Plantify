@@ -9,8 +9,9 @@ import {RouterModule, Routes} from "@angular/router";
 import {LoginComponent} from "./component/login/login.component";
 import {RegisterComponent} from "./component/register/register.component";
 import {ProfileComponent} from "./component/profile/profile.component";
-import { HomeComponent } from './component/home/home.component';
+import {HomeComponent} from './component/home/home.component';
 import {HomeModule} from "./component/home/home.module";
+import {NavigationbarComponent} from "./component/navigationbar/navigationbar.component";
 
 
 const routes: Routes = [
@@ -24,7 +25,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
   ],
   imports: [
     BrowserModule,
