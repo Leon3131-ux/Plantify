@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, FormBuilder} from "@angular/forms";
+import {RegisterService} from "../../service/register.service";
 
 @Component({
   selector: 'app-register',
@@ -12,7 +13,7 @@ export class RegisterComponent implements OnInit {
     email: new FormControl(''),
     password: new FormControl('')
   })
-  constructor() { }
+  constructor(private registerService: RegisterService) { }
 
 
   ngOnInit(){
@@ -21,6 +22,9 @@ export class RegisterComponent implements OnInit {
   submit() {
     // TODO: Use EventEmitter with form value
     console.warn(this.register.getRawValue());
+    this.registerService.register(this.register.getRawValue()).subscribe(() => {
+      //TODO successful register
+    }, () => {})
   }
 
 }
