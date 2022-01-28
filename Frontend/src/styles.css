@@ -8,7 +8,7 @@ html, body{
 .page-header-title{
   font-size: xxx-large;
   margin-left: 25%;
-  margin-right: 25%;
+  margin-rigt: 25%;
   width: 50%;
   text-align: center;
 }
@@ -22,6 +22,20 @@ html, body{
   width: 161px;
   height: 184px;
   margin: 0% 41% 0% 43%;
+}
+
+.img_sample{
+  width: 300px;
+  margin: 0% 0% 10% 75%;
+}
+
+.nav_logo{
+  width: 81px;
+  height: 92px;
+}
+.nav_button{
+  background: white;
+  font-size: xx-large;
 }
 
 .login-register-input-field{

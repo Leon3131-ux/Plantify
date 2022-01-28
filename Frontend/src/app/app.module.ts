@@ -18,11 +18,16 @@ import {LoginErrorHandler} from "./errorHandler/login-error-handler";
 import {NotFoundErrorHandler} from "./errorHandler/not-found-error-handler";
 import {ValidationErrorHandler} from "./errorHandler/validation-error-handler";
 import {MessageService} from "primeng/api";
+import {HomeComponent} from './component/home/home.component';
+import {HomeModule} from "./component/home/home.module";
+import {NavigationbarComponent} from "./component/navigationbar/navigationbar.component";
+
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
   {path: "register", component: RegisterComponent},
   {path: "profile", component: ProfileComponent},
+  {path: "home", component: HomeComponent},
   {path: "**", component: LoginComponent},
 ]
 
@@ -47,6 +52,7 @@ const routes: Routes = [
     NotFoundErrorHandler,
     ValidationErrorHandler,
     MessageService
+    HomeModule
   ],
   bootstrap: [AppComponent]
 })
