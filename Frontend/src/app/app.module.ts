@@ -9,6 +9,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {LoginComponent} from "./component/login/login.component";
 import {RegisterComponent} from "./component/register/register.component";
 import {ProfileComponent} from "./component/profile/profile.component";
+import {AnalyzeModule} from "./component/analyze/analyze.module";
+import {AnalyzeComponent} from "./component/analyze/analyze.component";
 import {FormsModule} from "@angular/forms";
 import {DefaultErrorHandler} from "./errorHandler/default-error-handler";
 import {AuthErrorHandler} from "./errorHandler/auth-error-handler";
@@ -23,10 +25,12 @@ import {HomeModule} from "./component/home/home.module";
 import {NavigationbarComponent} from "./component/navigationbar/navigationbar.component";
 
 
+
 const routes: Routes = [
   {path: "login", component: LoginComponent},
   {path: "register", component: RegisterComponent},
   {path: "profile", component: ProfileComponent},
+  {path: "analyze", component: AnalyzeComponent},
   {path: "home", component: HomeComponent},
   {path: "**", component: LoginComponent},
 ]
@@ -41,6 +45,7 @@ const routes: Routes = [
     LoginModule,
     RegisterModule,
     ProfileModule,
+    AnalyzeModule,
     FormsModule
   ],
   providers: [
