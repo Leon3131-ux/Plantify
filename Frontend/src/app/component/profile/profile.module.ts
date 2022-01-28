@@ -3,22 +3,21 @@ import { CommonModule } from '@angular/common';
 import {ProfileComponent} from "./profile.component";
 import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
-import {NavigationbarComponent} from "../navigationbar/navigationbar.component";
 import {RouterModule} from "@angular/router";
+import {NavigationbarModule} from "../navigationbar/navigationbar.module";
 
 
 
 @NgModule({
     declarations: [
         ProfileComponent,
-        NavigationbarComponent
-
     ],
     imports: [
         CommonModule,
         InputTextModule,
         ButtonModule,
-        RouterModule
+        RouterModule,
+        NavigationbarModule
     ]
 })
 export class ProfileModule { }
