@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   generic_error_message: false,
-  api_url: "http://localhost:8080/api"
+  api_url: "http://127.0.0.1:8000/api"
 };
 
 /*

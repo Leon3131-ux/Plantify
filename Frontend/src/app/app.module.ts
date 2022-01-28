@@ -11,6 +11,19 @@ import {RegisterComponent} from "./component/register/register.component";
 import {ProfileComponent} from "./component/profile/profile.component";
 import {AnalyzeModule} from "./component/analyze/analyze.module";
 import {AnalyzeComponent} from "./component/analyze/analyze.component";
+import {FormsModule} from "@angular/forms";
+import {DefaultErrorHandler} from "./errorHandler/default-error-handler";
+import {AuthErrorHandler} from "./errorHandler/auth-error-handler";
+import {DoNothingErrorHandler} from "./errorHandler/do-nothing-error-handler";
+import {InternalServerErrorHandler} from "./errorHandler/internal-server-error-handler";
+import {LoginErrorHandler} from "./errorHandler/login-error-handler";
+import {NotFoundErrorHandler} from "./errorHandler/not-found-error-handler";
+import {ValidationErrorHandler} from "./errorHandler/validation-error-handler";
+import {MessageService} from "primeng/api";
+import {HomeComponent} from './component/home/home.component';
+import {HomeModule} from "./component/home/home.module";
+import {NavigationbarComponent} from "./component/navigationbar/navigationbar.component";
+
 
 
 const routes: Routes = [
@@ -18,7 +31,8 @@ const routes: Routes = [
   {path: "register", component: RegisterComponent},
   {path: "profile", component: ProfileComponent},
   {path: "analyze", component: AnalyzeComponent},
-  {path: "**", component: LoginComponent}
+  {path: "home", component: HomeComponent},
+  {path: "**", component: LoginComponent},
 ]
 
 @NgModule({
@@ -31,9 +45,20 @@ const routes: Routes = [
     LoginModule,
     RegisterModule,
     ProfileModule,
-    AnalyzeModule
+    AnalyzeModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    DefaultErrorHandler,
+    AuthErrorHandler,
+    DoNothingErrorHandler,
+    InternalServerErrorHandler,
+    LoginErrorHandler,
+    NotFoundErrorHandler,
+    ValidationErrorHandler,
+    MessageService
+    HomeModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
