@@ -10,6 +10,14 @@ import {LoginComponent} from "./component/login/login.component";
 import {RegisterComponent} from "./component/register/register.component";
 import {ProfileComponent} from "./component/profile/profile.component";
 import {FormsModule} from "@angular/forms";
+import {DefaultErrorHandler} from "./errorHandler/default-error-handler";
+import {AuthErrorHandler} from "./errorHandler/auth-error-handler";
+import {DoNothingErrorHandler} from "./errorHandler/do-nothing-error-handler";
+import {InternalServerErrorHandler} from "./errorHandler/internal-server-error-handler";
+import {LoginErrorHandler} from "./errorHandler/login-error-handler";
+import {NotFoundErrorHandler} from "./errorHandler/not-found-error-handler";
+import {ValidationErrorHandler} from "./errorHandler/validation-error-handler";
+import {MessageService} from "primeng/api";
 
 const routes: Routes = [
   {path: "login", component: LoginComponent},
@@ -30,7 +38,16 @@ const routes: Routes = [
     ProfileModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    DefaultErrorHandler,
+    AuthErrorHandler,
+    DoNothingErrorHandler,
+    InternalServerErrorHandler,
+    LoginErrorHandler,
+    NotFoundErrorHandler,
+    ValidationErrorHandler,
+    MessageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

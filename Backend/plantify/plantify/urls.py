@@ -18,12 +18,10 @@ from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from django.conf.urls import url, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from users import views as user_views
 from finder import views as finder_views
 
 
 urlpatterns = [
-    url(r'^api1/', include('users.urls')),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls')),

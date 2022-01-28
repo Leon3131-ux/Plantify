@@ -10,6 +10,6 @@ export class RegisterService {
   constructor(private apiService: ApiService) { }
 
   register(registerFormData: any): Observable<any>{
-    return this.apiService.postSingle("/register", registerFormData);
+      return this.apiService.postSingle("/register/", registerFormData);
   }
 }
