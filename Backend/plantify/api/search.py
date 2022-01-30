@@ -1,4 +1,5 @@
 import json
+import plants_data
 
 
 class Search:
@@ -11,6 +12,8 @@ class Search:
 
 		self.search_plant()
 
+		self.plant_data = plants_data.plant_data
+
 	def search_plant(self):
 		"""
 		{
@@ -20,7 +23,7 @@ class Search:
 		}
 		:return:
 		"""
-		search_json = json.loads(search_plant)
+		search_json = self.request
 
 		if not search_json.get('shadow'):
 			self.response['error'] = 'parameter shadow is missing or empty'
@@ -30,23 +33,26 @@ class Search:
 			return
 		if not search_json.get('season_to_bloom'):
 			self.response['error'] = 'parameter season_to_bloom is missing or empty'
+			return
+		if not search_json.get('humidity'):
+			self.response['error'] = 'parameter season_to_bloom is missing or empty'
+			return
+		if not search_json.get('altitude'):
+			self.response['error'] = 'parameter season_to_bloom is missing or empty'
+			return
 
 		# height used to estimate temperature and humidity
 
-		height = 500  # height in meters
-		humidity = 3  # still unknown
+		matched_plants = self.match_plant(search_json.get('shadow'),
+										 search_json.get('height'),
+										 search_json.get('humidity'),
+										 search_json.get('season_to_bloom'),
+										 search_json.get('altitude'))
 
-		matched_plant = self.match_plant(search_json.get('shadow'),
-										 height,
-										 humidity,
-										 search_json.get('season_to_bloom'))
+		self.response = matched_plants
 
-		self.response = {
-			"name": matched_plant.get('name'),
-			"soil": matched_plant.get('soil')
-		}
 
-	def match_plant(self, shadow, height, humidity, season_to_bloom):
+	def match_plant(self, shadow, height, humidity, season_to_bloom, altitude):
 		"""
 		returns dict in this format:
 		{
@@ -62,9 +68,6 @@ class Search:
 		"""
 		print('mathing stuff to plant')
 
-		data = {
-			"name": "tomato",
-			"soil": "some stuff"
-		}
+		data = self.plant_data
 
 		return data

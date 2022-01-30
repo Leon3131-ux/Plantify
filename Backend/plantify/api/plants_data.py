@@ -1,4 +1,4 @@
-{
+plant_data = {
   "Leberblümchen": {
     "color": ["lila"],
     "season": ["Frühling"],
