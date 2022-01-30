@@ -46,7 +46,8 @@ const routes: Routes = [
     RegisterModule,
     ProfileModule,
     AnalyzeModule,
-    FormsModule
+    FormsModule,
+    HomeModule
   ],
   providers: [
     DefaultErrorHandler,
@@ -57,7 +58,6 @@ const routes: Routes = [
     NotFoundErrorHandler,
     ValidationErrorHandler,
     MessageService
-    HomeModule
   ],
   bootstrap: [AppComponent]
 })
