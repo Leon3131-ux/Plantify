@@ -23,6 +23,8 @@ import {MessageService} from "primeng/api";
 import {HomeComponent} from './component/home/home.component';
 import {HomeModule} from "./component/home/home.module";
 import {NavigationbarComponent} from "./component/navigationbar/navigationbar.component";
+import { ResultComponent } from './component/result/result.component';
+import {ResultModule} from "./component/result/result.module";
 
 
 
@@ -32,6 +34,7 @@ const routes: Routes = [
   {path: "profile", component: ProfileComponent},
   {path: "analyze", component: AnalyzeComponent},
   {path: "home", component: HomeComponent},
+  {path: "result", component: ResultComponent},
   {path: "**", component: LoginComponent},
 ]
 
@@ -47,7 +50,8 @@ const routes: Routes = [
     ProfileModule,
     AnalyzeModule,
     FormsModule,
-    HomeModule
+    HomeModule,
+    ResultModule
   ],
   providers: [
     DefaultErrorHandler,

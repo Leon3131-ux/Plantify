@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba11791b-01c0-4825-a64c-5d45a24a784a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/home/home.module.ts" afterDir="false" />
+    <list default="true" id="ba11791b-01c0-4825-a64c-5d45a24a784a" name="Changes" comment="fixed home site amongst other things">
+      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/result/result.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/result/result.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/result/result.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/src/app/component/result/result.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
       <recent name="C:\Users\stefa\Documents\Programming\PlantifyFrontend\Backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Noah\PycharmProjects\PlantifyFrontend\Frontend\src\app\component\result" />
       <recent name="C:\Users\Noah\PycharmProjects\PlantifyFrontend\Frontend\src\app\component\home" />
       <recent name="C:\Users\stefa\Documents\Programming\PlantifyFrontend\Backend" />
       <recent name="C:\Users\stefa\Documents\Programming\PlantifyFrontend\Frontend" />
@@ -73,6 +73,7 @@
       <workItem from="1643483684313" duration="1969000" />
       <workItem from="1643486320828" duration="783000" />
       <workItem from="1643547907639" duration="749000" />
+      <workItem from="1643654447634" duration="812000" />
     </task>
     <servers />
   </component>
@@ -106,5 +107,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed home site amongst other things" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed home site amongst other things" />
   </component>
 </project>
