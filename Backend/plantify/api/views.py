@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from django.shortcuts import render
-from api.search import Search
+from . import search as search_modul
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -8,7 +9,7 @@ from api.search import Search
 def apiOverview(request):
 	return JsonResponse("API BASE POINT", safe=False)
 
-
+@csrf_exempt
 def search(request):
 	"""
 	request must be a JSON containing the following:
@@ -21,5 +22,5 @@ def search(request):
 	:param request:
 	:return:
 	"""
-	search_obj = Search(request)
+	search_obj = search_modul.Search(request)
 	return JsonResponse(search_obj.response)

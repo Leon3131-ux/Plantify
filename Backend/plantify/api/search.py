@@ -1,5 +1,5 @@
 import json
-import plants_data
+from . import plants_data
 
 
 class Search:
@@ -12,8 +12,6 @@ class Search:
 
 		self.search_plant()
 
-		self.plant_data = plants_data.plant_data
-
 	def search_plant(self):
 		"""
 		{
@@ -23,7 +21,9 @@ class Search:
 		}
 		:return:
 		"""
-		search_json = self.request
+		body_unicode = self.request.body.decode('utf-8')
+		search_json = json.loads(body_unicode)
+		self.response['error'] = str(search_json)
 
 		if not search_json.get('shadow'):
 			self.response['error'] = 'parameter shadow is missing or empty'
@@ -51,7 +51,6 @@ class Search:
 
 		self.response = matched_plants
 
-
 	def match_plant(self, shadow, height, humidity, season_to_bloom, altitude):
 		"""
 		returns dict in this format:
@@ -66,8 +65,25 @@ class Search:
 		:param season_to_bloom:
 		:return:
 		"""
-		print('mathing stuff to plant')
+		data = {}
+		for plant_name, plant_info in plants_data.plant_data.items():
+			if season_to_bloom not in plant_info.get('season'):
+				continue
+			if not humidity == plant_info.get('humidity'):
+				continue
+			if not shadow == plant_info.get('shadow'):
+				continue
+			if height not in range(plant_info.get('height')[0], plant_info.get('height')[1]):
+				continue
+			if altitude not in range(plant_info.get('altitude')[0], plant_info.get('altitude')[1]):
+				continue
 
-		data = self.plant_data
+			data[plant_name] = {
+				"colors": plant_info.get('color')
+			}
+		if data == {}:
+			data = {
+				'error': 'No plant found for your circumstances'
+			}
 
 		return data
