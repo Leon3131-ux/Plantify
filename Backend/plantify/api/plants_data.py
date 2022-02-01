@@ -1,7 +1,7 @@
 plant_data = {
   "Leberblümchen": {
     "color": ["lila"],
-    "season": ["Frühling"],
+    "season": ["Spring"],
     "humidity": 2,
     "shadow": 2,
     "height": [5, 15],
@@ -9,7 +9,7 @@ plant_data = {
   },
   "Narzisse": {
     "color": ["gelb"],
-    "season": ["Frühling"],
+    "season": ["Spring"],
     "humidity": 3,
     "shadow": 4,
     "height": [15, 40],
@@ -17,7 +17,7 @@ plant_data = {
   },
   "Bisamhyazinthe": {
 	"color": ["blau"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [10, 30],
@@ -25,7 +25,7 @@ plant_data = {
   },
   "Anemone": {
 	"color": ["weiss"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [5, 15],
@@ -33,7 +33,7 @@ plant_data = {
   },
   "Tulpe": {
 	"color": ["gelb"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [20, 50],
@@ -41,7 +41,7 @@ plant_data = {
   },
   "Krokus": {
 	"color": ["weiss", "lila"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 4,
 	"height": [5, 15],
@@ -49,7 +49,7 @@ plant_data = {
   },
   "Schneeglöckchen": {
 	"color": ["weiss"],
-	"season": ["Winter", "Frühling"],
+	"season": ["Winter", "Spring"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [10, 20],
@@ -57,7 +57,7 @@ plant_data = {
   },
   "Zweiblättriger Blaustern": {
 	"color": ["blau"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [10, 25],
@@ -65,7 +65,7 @@ plant_data = {
   },
   "Maiglöckchen": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 3,
 	"height": [10, 25],
@@ -73,7 +73,7 @@ plant_data = {
   },
   "Hundszahn": {
 	"color": ["rot"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [10,20],
@@ -81,7 +81,7 @@ plant_data = {
   },
   "Kornelkirsche": {
 	"color": ["gelb"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [150, 500],
@@ -89,7 +89,7 @@ plant_data = {
   },
   "Traubenkirsche": {
 	"color": ["weiss"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 4,
 	"shadow": 2,
 	"height": [150, 500],
@@ -97,7 +97,7 @@ plant_data = {
   },
   "Berberitze": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 3,
 	"height": [150, 500],
@@ -105,14 +105,14 @@ plant_data = {
   },
   "Felsenmispel": {
 	"color": ["weiss"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [150, 500],
 	"altitude": [0,1800]
   },"Gemeiner Flieder": {
 	"color": ["lila"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [150, 500],
@@ -120,7 +120,7 @@ plant_data = {
   },
   "Ginster": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 4,
 	"height": [20,70],
@@ -128,7 +128,7 @@ plant_data = {
   },
   "Schneeball": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 3,
 	"height": [150, 500],
@@ -136,7 +136,7 @@ plant_data = {
   },
   "Roter Holunder": {
 	"color": ["gelb"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 4,
 	"height": [150, 500],
@@ -144,7 +144,7 @@ plant_data = {
   },
   "Alpen-Heckenkirsche": {
 	"color": ["weiss"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [150, 500],
@@ -152,7 +152,7 @@ plant_data = {
   },
   "Besenheide": {
 	"color": ["rosa"],
-	"season": ["Herbst"],
+	"season": ["Autumn"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [10,50],
@@ -160,7 +160,7 @@ plant_data = {
   },
   "Schwarze Heckenkirsche": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [150, 500],
@@ -168,7 +168,7 @@ plant_data = {
   },
   "Echter Lavendel": {
 	"color": ["blau"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 1,
 	"shadow": 3,
 	"height": [20, 60],
@@ -176,7 +176,7 @@ plant_data = {
   },
   "Rose": {
 	"color": ["rosa"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 3,
 	"height": [150, 500],
@@ -184,7 +184,7 @@ plant_data = {
   },
   "Stachelbeere": {
 	"color": ["gelb"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [100, 150],
@@ -192,7 +192,7 @@ plant_data = {
   },
   "Klee": {
 	"color": ["rot"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [5, 20],
@@ -200,7 +200,7 @@ plant_data = {
   },
   "Lupine": {
 	"color": ["blau"],
-	"season": ["Sommer", "Herbst"],
+	"season": ["Summer", "Autumn"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [60, 150],
@@ -208,7 +208,7 @@ plant_data = {
   },
   "Trollblume": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 4,
 	"shadow": 4,
 	"height": [60],
@@ -216,7 +216,7 @@ plant_data = {
   },
   "Sibirische Schwertlilie": {
 	"color": ["blau"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 4,
 	"shadow": 4,
 	"height": [50, 80],
@@ -224,7 +224,7 @@ plant_data = {
   },
   "Gelbe Schwertlilie": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 4,
 	"shadow": 3,
 	"height": [50, 100],
@@ -232,7 +232,7 @@ plant_data = {
   },
   "Gewürz-Thymian": {
 	"color": ["lila"],
-	"season": ["Sommer", "Herbst"],
+	"season": ["Summer", "Autumn"],
 	"humidity": 1,
 	"shadow": 3,
 	"height": [10, 30],
@@ -240,7 +240,7 @@ plant_data = {
   },
   "Bach-Steinbrech": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 4,
 	"shadow": 4,
 	"height": [5, 20],
@@ -248,7 +248,7 @@ plant_data = {
   },
   "Gegenblättriger Steinbrech": {
 	"color": ["rosa"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 5,
 	"height": [1200, 1800],
@@ -256,7 +256,7 @@ plant_data = {
   },
   "Preiselbeere": {
 	"color": ["rosa"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [5, 30],
@@ -264,7 +264,7 @@ plant_data = {
   },
   "Sonnenröschen": {
 	"color": ["gelb"],
-	"season": ["Sommer", "Herbst"],
+	"season": ["Summer", "Autumn"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [10, 40],
@@ -272,7 +272,7 @@ plant_data = {
   },
   "Heidelbeere": {
 	"color": ["grün"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [50],
@@ -280,7 +280,7 @@ plant_data = {
   },
   "Wald-Bärlapp": {
 	"color": ["grün"],
-	"season": ["Sommer", "Herbst"],
+	"season": ["Summer", "Autumn"],
 	"humidity": 3,
 	"shadow": 1,
 	"height": [5],
@@ -288,7 +288,7 @@ plant_data = {
   },
   "Wald-Erdbeere": {
 	"color": ["weiss"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [5, 20],
@@ -296,7 +296,7 @@ plant_data = {
   },
   "Kriechender Günsel": {
 	"color": ["blau"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [10, 30],
@@ -304,7 +304,7 @@ plant_data = {
   },
   "Wald-Geissbart": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [100, 200],
@@ -312,7 +312,7 @@ plant_data = {
   },
   "Nickendes Perlgras": {
 	"color": ["grün"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 2,
 	"height": [25, 50],
@@ -320,7 +320,7 @@ plant_data = {
   },
   "Gemeiner Aronstab": {
 	"color": ["grün"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [15, 40],
@@ -328,7 +328,7 @@ plant_data = {
   },
   "Vielblütiges Salomonssiegel": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [30, 60],
@@ -344,7 +344,7 @@ plant_data = {
   },
   "Grüne Nieswurz": {
 	"color": ["grün"],
-	"season": ["Winter", "Frühling"],
+	"season": ["Winter", "Spring"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [30, 50],
@@ -352,7 +352,7 @@ plant_data = {
   },
   "Efeu": {
 	"color": ["grün"],
-	"season": ["Herbst"],
+	"season": ["Autumn"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [20000],
@@ -360,7 +360,7 @@ plant_data = {
   },
   "Vierblättrige Einbeere": {
 	"color": ["weiss"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [15, 30],
@@ -368,7 +368,7 @@ plant_data = {
   },
   "Weisses Breitkölbchen": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [20, 50],
@@ -376,7 +376,7 @@ plant_data = {
   },
   "Moor-Geissbart": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 4,
 	"shadow": 3,
 	"height": [50, 200],
@@ -384,7 +384,7 @@ plant_data = {
   },
   "Behaartes Veilchen": {
 	"color": ["lila"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 2,
 	"shadow": 3,
 	"height": [2, 10],
@@ -392,7 +392,7 @@ plant_data = {
   },
   "Gewöhnliches Feld-Stiefmütterchen": {
 	"color": ["lila", "gelb"],
-	"season": ["Frühling", "Herbst"],
+	"season": ["Spring", "Autumn"],
 	"humidity": 3,
 	"shadow": 4,
 	"height": [10, 40],
@@ -400,7 +400,7 @@ plant_data = {
   },
   "Sumpf-Veilchen": {
 	"color": ["lila"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 4,
 	"shadow": 3,
 	"height": [4, 10],
@@ -408,7 +408,7 @@ plant_data = {
   },
   "Alpen-Akelei": {
 	"color": ["blau"],
-	"season": ["Herbst"],
+	"season": ["Autumn"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [20, 70],
@@ -416,7 +416,7 @@ plant_data = {
   },
   "Alpen-Glocken-Enzian": {
 	"color": ["blau"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 5,
 	"height": [10],
@@ -424,7 +424,7 @@ plant_data = {
   },
   "Schwalbenwurz-Enzian": {
 	"color": ["blau"],
-	"season": ["Herbst"],
+	"season": ["Autumn"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [30, 90],
@@ -432,7 +432,7 @@ plant_data = {
   },
   "Gelber Enzian": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 4,
 	"shadow": 4,
 	"height": [50, 120],
@@ -440,7 +440,7 @@ plant_data = {
   },
   "Busch-Windröschen": {
 	"color": ["weiss"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [10, 25],
@@ -448,7 +448,7 @@ plant_data = {
   },
   "Berg-Nelkenwurz": {
 	"color": ["gelb"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 4,
 	"height": [10, 40],
@@ -456,7 +456,7 @@ plant_data = {
   },
   "Bach-Nelkenwurz": {
 	"color": ["rot"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 4,
 	"shadow": 3,
 	"height": [30, 60],
@@ -464,7 +464,7 @@ plant_data = {
   },
   "Schmalblättriges Wollgras": {
 	"color": ["weiss"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 4,
 	"shadow": 4,
 	"height": [20, 50],
@@ -472,7 +472,7 @@ plant_data = {
   },
   "Gewöhnliches Lungenkraut": {
 	"color": ["rot", "blau"],
-	"season": ["Frühling"],
+	"season": ["Spring"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [10, 40],
@@ -480,15 +480,15 @@ plant_data = {
   },
   "Alpen-Aster": {
 	"color": ["lila"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 5,
 	"height": [5, 20],
 	"altitude": [1200, 5000]
   },
-  "Herbst-Zeitlose": {
+  "Autumn-Zeitlose": {
 	"color": ["rosa"],
-	"season": ["Herbst"],
+	"season": ["Autumn"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [5, 25],
@@ -496,7 +496,7 @@ plant_data = {
   },
   "Europäisches Alpenveilchen": {
 	"color": ["rosa"],
-	"season": ["Herbst"],
+	"season": ["Autumn"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [5, 15],
@@ -504,7 +504,7 @@ plant_data = {
   },
   "Garten-Ringelblume": {
 	"color": ["orange"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 3,
 	"height": [15, 30],
@@ -512,7 +512,7 @@ plant_data = {
   },
   "Silikat-Polsternelke": {
 	"color": ["rosa"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 5,
 	"height": [1, 3],
@@ -520,7 +520,7 @@ plant_data = {
   },
   "Goldnessel": {
 	"color": ["gelb"],
-	"season": ["Frühling", "Sommer"],
+	"season": ["Spring", "Summer"],
 	"humidity": 3,
 	"shadow": 1,
 	"height": [20, 60],
@@ -528,7 +528,7 @@ plant_data = {
   },
   "Astlose Graslilie": {
 	"color": ["weiss"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 1,
 	"shadow": 4,
 	"height": [30, 60],
@@ -536,7 +536,7 @@ plant_data = {
   },
   "Feuerlilie": {
 	"color": ["orange"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 2,
 	"shadow": 4,
 	"height": [20, 80],
@@ -544,7 +544,7 @@ plant_data = {
   },
   "Türkenbund": {
 	"color": ["lila"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 3,
 	"height": [30, 90],
@@ -552,7 +552,7 @@ plant_data = {
   },
   "Hirschzunge": {
 	"color": ["grün"],
-	"season": ["Sommer"],
+	"season": ["Summer"],
 	"humidity": 3,
 	"shadow": 2,
 	"height": [15, 60],
