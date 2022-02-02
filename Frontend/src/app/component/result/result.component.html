@@ -8,11 +8,20 @@
         <div class="col-1"></div>
         <div class="col-10">
           <div class="grid">
-            <div class="col-1"></div>
-            <div class=" mt-4 col-5 grid">
-            </div>
-            <div class=" mt-4 grid">
-            </div>
+            <mat-card class="card col-2" *ngFor="let test of tests">
+              <mat-card-header>
+                <mat-card-title>
+                  Test
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div>
+                  <span></span>
+                  <span>ID: {{test.id}}</span><br>
+                  <span>name: {{test.name}}</span><br>
+                </div>
+              </mat-card-content>
+            </mat-card>
           </div>
         </div>
       </div>
