@@ -9,68 +9,70 @@
         <div class="col-4">Do you want to use the Data from the profile?</div>
         <button><img src="assets/images/profile.png" style="height: 30px; "></button>
       </div>
-      <div class="grid">
-        <div class="col-1"></div>
-        <div class="col-10">
-          <div class="grid">
-            <div class="col-1"></div>
-            <div class=" mt-4 col-10 grid">
-              <label class="col-3">Sun Ratio</label>
-              <select class="browser-default custom-select login-register-input-field">
-                <option value="A lot of sun">A lot of sun</option>
-                <option value="More sun">More sun</option>
-                <option value="equal">equal</option>
-                <option value="More shadow">More shadow</option>
-                <option value="Completely in the shadow">Completely in the shadow</option>
-              </select>
+      <form [formGroup]="search">
+        <div class="grid">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="grid">
+              <div class="col-1"></div>
+              <div class=" mt-4 col-10 grid">
+                <label class="col-3">Sun Ratio</label>
+                <select formControlName="shadow" class="browser-default custom-select login-register-input-field">
+                  <option value=5>A lot of sun</option>
+                  <option value=4>More sun</option>
+                  <option value=3>equal</option>
+                  <option value=2>More shadow</option>
+                  <option value=1>Completely in the shadow</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="grid">
-            <div class="col-1"></div>
-            <div class=" mt-4 col-10 grid">
-              <label class="col-3">Humidity</label>
-              <select class="browser-default custom-select login-register-input-field">
-                <option value="Swamp">Swamp</option>
-                <option value="Moist">Moist</option>
-                <option value="Dry">Dry</option>
-                <option value="Very dry">Very dry</option>
-              </select>
+            <div class="grid">
+              <div class="col-1"></div>
+              <div class=" mt-4 col-10 grid">
+                <label class="col-3">Humidity</label>
+                <select formControlName="humidity" class="browser-default custom-select login-register-input-field">
+                  <option value=4>Swamp</option>
+                  <option value=3>Moist</option>
+                  <option value=2>Dry</option>
+                  <option value=1>Very dry</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="grid">
-            <div class="col-1"></div>
-            <div class=" mt-4 col-10 grid">
-              <label class="col-3">Season</label>
-              <select class="browser-default custom-select login-register-input-field">
-                <option value="Spring">Spring</option>
-                <option value="Summer">Summer</option>
-                <option value="Autumn">Autumn</option>
-                <option value="Winter">Winter</option>
-              </select>
+            <div class="grid">
+              <div class="col-1"></div>
+              <div class=" mt-4 col-10 grid">
+                <label class="col-3">Season</label>
+                <select formControlName="season_to_bloom" class="browser-default custom-select login-register-input-field">
+                  <option value="Spring">Spring</option>
+                  <option value="Summer">Summer</option>
+                  <option value="Autumn">Autumn</option>
+                  <option value="Winter">Winter</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="grid">
-            <div class="col-1"></div>
-            <div class=" mt-4 col-10 grid">
-              <label class="col-3">Altitude</label>
-              <input type="text" pInputText class="login-register-input-field" placeholder="meter over sea">
+            <div class="grid">
+              <div class="col-1"></div>
+              <div class=" mt-4 col-10 grid">
+                <label class="col-3">Altitude</label>
+                <input formControlName="altitude" type="text" pInputText class="login-register-input-field" placeholder="meter over sea">
+              </div>
             </div>
-          </div>
-          <div class="grid">
-            <div class="col-1"></div>
-            <div class=" mt-4 col-10 grid">
-              <label class="col-3">Max plant height</label>
-              <input type="text" pInputText class="login-register-input-field" placeholder="meter">
+            <div class="grid">
+              <div class="col-1"></div>
+              <div class=" mt-4 col-10 grid">
+                <label class="col-3">Max plant height</label>
+                <input formControlName="height" type="text" pInputText class="login-register-input-field" placeholder="meter">
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="grid mt-4 mb-1">
-        <div class="col-9"></div>
-        <div class="text-center ml-3">
-          <p-button label="Analyze"></p-button>
+        <div class="grid mt-4 mb-1">
+          <div class="col-9"></div>
+          <div class="text-center ml-3">
+            <p-button label="Analyze" (onClick)="runSearch()"></p-button>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>

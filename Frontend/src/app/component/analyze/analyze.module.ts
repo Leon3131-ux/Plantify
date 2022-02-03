@@ -5,6 +5,8 @@ import {InputTextModule} from "primeng/inputtext";
 import {ButtonModule} from "primeng/button";
 import {RouterModule} from "@angular/router";
 import {NavigationbarModule} from "../navigationbar/navigationbar.module";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+
 
 
 
@@ -17,8 +19,9 @@ import {NavigationbarModule} from "../navigationbar/navigationbar.module";
     InputTextModule,
     ButtonModule,
     RouterModule,
-    NavigationbarModule
-
+    NavigationbarModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class AnalyzeModule { }
